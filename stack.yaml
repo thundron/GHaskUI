@@ -1,0 +1,8 @@
+resolver: lts-20.0 # From your old stack.yaml
+
+packages:
+  - . # Refers to the ghaskui library in the root. The root package.yaml correctly sources examples/calculator for its executable.
+
+# Optional: Define ghc-options for all local packages if desired
+# ghc-options:
+#   "$locals": -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints

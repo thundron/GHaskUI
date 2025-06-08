@@ -1,0 +1,38 @@
+# Haskell Stack generated files
+.stack-work/
+
+# Cabal generated files (often used by Stack indirectly or directly)
+dist-newstyle/
+
+# Compiled Haskell files
+*.o
+*.hi
+*.dyn_o
+*.dyn_hi
+
+# Editor backup and auto-save files
+*~
+.#*
+
+# IDE-specific files
+*.session
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+
+# Executables (if built to a local bin directory not within .stack-work)
+# bin/
+# *.exe
+
+# Example-specific build artifacts
+examples/**/.stack-work/
+examples/**/*.exe
+examples/**/*.o
+examples/**/*.hi
+examples/**/ghc.environment.*

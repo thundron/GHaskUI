@@ -1,0 +1,50 @@
+name: ghaskui
+version: 0.1.0.0
+synopsis: A native cross-platform GUI framework for Haskell
+description: GHaskUI aims to provide a way to build native GUIs in Haskell using only the base library and FFI, starting with Windows.
+category: Graphics
+# author: Your Name Here <youremail@example.com>
+# maintainer: Your Name Here <youremail@example.com>
+# copyright: Your Name Here
+license: BSD3 # Or your preferred license
+# homepage:    https://github.com/yourusername/ghaskui#readme
+# bug-reports: https://github.com/yourusername/ghaskui/issues
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wredundant-constraints
+
+library:
+  source-dirs: src
+  default-extensions:
+    - ScopedTypeVariables
+    - RecordWildCards
+    - GADTs
+    - ConstraintKinds
+    - MultiParamTypeClasses
+    - FunctionalDependencies
+    - GeneralizedNewtypeDeriving
+  dependencies:
+    - base >= 4.14 && < 5
+  exposed-modules:
+    - GHaskUI
+    - GHaskUI.Platform.Windows
+    - GHaskUI.Core
+
+dependencies:
+  - base >= 4.14 && < 5
+
+executables:
+  calculator:
+    main:                Main.hs
+    source-dirs:         examples/calculator
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - ghaskui
+      - base >= 4.14 && < 5

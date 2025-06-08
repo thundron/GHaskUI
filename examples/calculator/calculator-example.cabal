@@ -1,0 +1,21 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           calculator-example
+version:        0.1.0.0
+build-type:     Simple
+
+executable calculator
+  main-is: Main.hs
+  other-modules:
+      Paths_calculator_example
+  hs-source-dirs:
+      ./
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.14 && <5
+    , ghaskui
+  default-language: Haskell2010
