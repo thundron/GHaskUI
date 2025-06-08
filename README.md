@@ -1,0 +1,1 @@
+Haskell multiplatform native GUI components library
