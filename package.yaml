@@ -1,7 +1,7 @@
 name: ghaskui
 version: 0.1.0.0
 synopsis: A native cross-platform GUI framework for Haskell
-description: GHaskUI aims to provide a way to build native GUIs in Haskell using only the base library and FFI, starting with Windows.
+description: GHaskUI aims to provide a way to build native GUIs in Haskell using only the base library and FFI
 category: Graphics
 author: Thundron <la@thundron.dev>
 maintainer: Thundron <la@thundron.dev>
