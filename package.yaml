@@ -5,7 +5,7 @@ description: GHaskUI aims to provide a way to build native GUIs in Haskell using
 category: Graphics
 author: Thundron <la@thundron.dev>
 maintainer: Thundron <la@thundron.dev>
-copyright: Thundron <la@thundron.dev>
+copyright: Axeleron Tech <info@axeleron.tech>
 license: Apache-2.0
 homepage:    https://github.com/thundron/ghaskui#readme
 bug-reports: https://github.com/thundron/ghaskui/issues
